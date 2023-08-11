@@ -1,0 +1,51 @@
+.portbody-con {
+  width: 100%;
+}
+.portbody-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.portbody-div li {
+  width: 30%;
+  margin-top: 30px;
+  position: relative;
+}
+.port-style {
+  color: wheat;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.port-text {
+  position: absolute;
+  top: 0%;
+  left: 15%;
+  height: 500px;
+  font-size: 23px;
+  font-weight: bold;
+  border-radius: 15px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1s ease;
+}
+.port-text:hover {
+  background-color: rgb(77, 77, 77, 0.5);
+}
+
+.portbody-div img {
+  max-width: 70%;
+  border-radius: 20px;
+}
+
+.additional-links {
+  display: flex;
+
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 10px;
+}

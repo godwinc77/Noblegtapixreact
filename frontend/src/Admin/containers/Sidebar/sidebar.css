@@ -1,0 +1,19 @@
+.sidebar__con{
+    border: blue solid;
+    width: 25%;
+    height: 450px;
+    text-align: center;
+    margin-top: 60px;
+    border-radius: 20px;
+    background:rgb(89, 89, 89);
+
+}
+.sidebar__con li{
+    padding-top: 70px;
+}
+.link-style{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+
+}

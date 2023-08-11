@@ -1,0 +1,93 @@
+.portflio__con {
+  border: green solid;
+  width: 100%;
+  height: 450px;
+  border-radius: 20px;
+}
+
+.portfliodiv__con {
+  width: 100%;
+  height: 800px;
+  border-radius: 20px;
+}
+.portfliodiv__con2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.portfliodiv__upload {
+  border: gold solid;
+  width: 30%;
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfliodiv__display {
+  width: 79%;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0px auto;
+  padding: 10px;
+  justify-content: space-around;
+}
+.portfliodiv__display img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.portfliodiv__upload__input {
+  border: royalblue solid;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+}
+.portfliodiv__upload__input input {
+  border: darkmagenta solid;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+}
+.portfliodiv__upload__input button {
+  padding: 6px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.portfliodiv__display__preview {
+  border: red solid;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.portfliodiv__display__preview img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.portfliodiv__display__preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.portfliodiv__display__preview img {
+  max-width: 150px;
+  max-height: 150px;
+}
+/* PortfolioNav.css */
+.link-style {
+  /* Your default link styles */
+  color: black;
+  text-decoration: none;
+}
+
+.active {
+  /* Your styles for the active link */
+  color: red;
+  /* Add any other styles you want to apply to the active link */
+}

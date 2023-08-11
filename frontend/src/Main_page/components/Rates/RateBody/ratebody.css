@@ -1,0 +1,142 @@
+.ratebody-con {
+  background-color: rgb(26, 26, 26);
+  height: 500px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.ratebody-head {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ratebody-head1 {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid white;
+  margin-bottom: 30px;
+}
+.nob {
+  font-size: 25px;
+}
+.nob1 {
+  font-size: 20px;
+}
+.ratebody-head2 {
+  width: 50%;
+
+  display: flex;
+  justify-content: space-around;
+}
+.ratebody-head2 p {
+  display: flex;
+}
+
+.ratebody-package-con {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.ratebody-package {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ratebody-package-head {
+  font-size: 23px;
+  font-weight: 600;
+}
+.ratebody-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.ratebody-box-con {
+  border: 1px white solid;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 20px;
+}
+.ratebody-box-head {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+}
+.ratebody-box-body {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-bottom-right-radius: 10px;
+}
+.ratebody-box-body p {
+  margin-top: 5px;
+  font-size: 19px;
+}
+.text {
+  width: 40%;
+
+  text-align: center;
+  height: 40px;
+}
+.text p {
+  margin-top: 5px;
+  font-size: 19px;
+  width: 100%;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  border-bottom-right-radius: 10px;
+  height: 40px;
+}
+.text-con {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+}
+.text-con p {
+  width: 30%;
+}
+.ratebody-terms {
+  border: rebeccapurple solid;
+  width: 100%;
+}
+.ratebody-terms-head {
+  border: red solid;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: red;
+}
+.ratebody-head-text {
+  font-size: 23px;
+}
+.ratebody-text {
+  width: 100%;
+  border: forestgreen solid;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.ratebody-text p {
+  margin-top: 10px;
+}

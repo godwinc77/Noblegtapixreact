@@ -1,0 +1,7 @@
+.port-box {
+  width: 100%;
+  border: salmon solid;
+  padding-top: 500px;
+  position: absolute;
+  top: 100%;
+}
