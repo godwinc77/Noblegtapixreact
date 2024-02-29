@@ -1,0 +1,52 @@
+/* about.css */
+.abouthead {
+  /* Your abouthead styles here */
+}
+
+.abouthead_con {
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutslider {
+  display: flex;
+  overflow: hidden;
+}
+
+.aboutslide-container {
+  display: flex; /* Ensure the container is a flex container */
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.aboutslide-animation {
+  display: flex;
+  animation: slideAnimation 20s linear infinite;
+}
+
+.aboutslide {
+  flex: 0 0 calc(100% / 3); /* Show three images at a time */
+  max-width: calc(
+    100% / 3
+  ); /* Ensure each image takes up a third of the container */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-100% * 3)
+    ); /* Adjust based on the number of images shown at a time */
+  }
+}

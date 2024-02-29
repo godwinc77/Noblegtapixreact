@@ -1,5 +1,7 @@
 .portbody-con {
   width: 100%;
+  border: red solid;
+  height: 1200px;
 }
 .portbody-div {
   width: 100%;

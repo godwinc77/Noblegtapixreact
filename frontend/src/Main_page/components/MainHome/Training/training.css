@@ -1,0 +1,78 @@
+.training {
+  width: 100%;
+  height: 570px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.training-body {
+  width: 95%;
+  margin-top: 10px;
+  border: 1px solid white;
+  padding: 10px;
+  height: 560px;
+
+  border-radius: 20px;
+}
+.training-text {
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+}
+.trainig-list {
+  width: 100%;
+
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trainig-list h3 {
+  padding: 10px;
+}
+.trainig-list-info {
+  width: 80%;
+  height: 300px;
+  border: 1px solid fuchsia;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+  border-radius: 20px;
+}
+
+.trainig-list-info ul li {
+  text-align: center;
+}
+.trainingz li {
+  padding-bottom: 50px;
+}
+.trainig-list-text {
+  width: 60%;
+  border-bottom-left-radius: 20px;
+  height: 260px;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.trainig-list-text2 {
+  width: 30%;
+  border-bottom-right-radius: 20px;
+  height: 260px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+.training-contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.training-contact-info {
+  width: 70%;
+  text-align: center;
+}
+.training-contact-info h3 {
+  margin-top: 10px;
+}

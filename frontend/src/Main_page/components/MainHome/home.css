@@ -1,4 +1,15 @@
-.mainhome_con{
-    width: 100%;
-    border: yellow solid;
+.mainhome_con {
+  width: 100%;
+  height: 3000px;
+  border: yellow solid;
+}
+
+@media screen and (max-width: 950px) {
+  .section__padding {
+    padding: 4rem;
+  }
+
+  .section__margin {
+    margin: 4rem;
+  }
 }

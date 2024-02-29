@@ -1,10 +1,11 @@
 .ratebody-con {
   background-color: rgb(26, 26, 26);
-  height: 500px;
+  height: 1150px;
   width: 100%;
   color: white;
   display: flex;
   flex-direction: column;
+  border: darkgoldenrod solid;
 }
 .ratebody-head {
   width: 100%;
@@ -116,11 +117,9 @@
   width: 30%;
 }
 .ratebody-terms {
-  border: rebeccapurple solid;
   width: 100%;
 }
 .ratebody-terms-head {
-  border: red solid;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -132,7 +131,7 @@
 }
 .ratebody-text {
   width: 100%;
-  border: forestgreen solid;
+
   font-size: 18px;
   margin-top: 10px;
   margin-bottom: 30px;

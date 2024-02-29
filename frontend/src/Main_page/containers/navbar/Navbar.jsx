@@ -1,25 +1,41 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo1.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "./navbar.css";
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      setVisible(prevScrollPos > currentScrollPos);
-      setPrevScrollPos(currentScrollPos);
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+
+      // Close the sidebar if it's open and the width increases
+      if (sidebarOpen && window.innerWidth > 950) {
+        setSidebarOpen(false);
+      }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
-  }, [prevScrollPos]);
+  }, [sidebarOpen]);
+
+  const toggleSidebar = () => {
+    // Close the sidebar if it's open
+    if (window.innerWidth <= 950) {
+      setSidebarOpen(!sidebarOpen);
+    } else {
+      setSidebarOpen(false);
+    }
+  };
 
   return (
     <nav className={`${visible ? "" : "navbar-scroll"}`}>
@@ -33,16 +49,77 @@ const Navbar = () => {
             />
           </div>
 
-          <ul style={{ listStyleType: "none" }}>
-            <li className="navbar">
-              <Link to="/">HOME</Link>
-              <Link to="/main-gallery">GALLERY</Link>
-              <Link to="/main-portfolio">PORTFOLIO</Link>
-              <Link to="/main-rates">RATES</Link>
-              <Link to="/main-service">BOOKING</Link>
-              <Link to="/main-about">ABOUT US</Link>
-            </li>
-          </ul>
+          {windowWidth > 950 && (
+            <ul style={{ listStyleType: "none" }} className="navbar">
+              <li>
+                <Link to="/">HOME</Link>
+              </li>
+              <li>
+                <Link to="/main-gallery">GALLERY</Link>
+              </li>
+              <li>
+                <Link to="/main-portfolio">PORTFOLIO</Link>
+              </li>
+              <li>
+                <Link to="/main-rates">RATES</Link>
+              </li>
+              <li>
+                <Link to="/main-service">BOOKING</Link>
+              </li>
+              <li>
+                <Link to="/main-about">ABOUT US</Link>
+              </li>
+            </ul>
+          )}
+
+          {windowWidth <= 950 && (
+            <div>
+              {sidebarOpen ? (
+                <FontAwesomeIcon
+                  icon={faTimes}
+                  onClick={toggleSidebar}
+                  className="exit-icon"
+                />
+              ) : (
+                <FontAwesomeIcon
+                  icon={faBars}
+                  onClick={toggleSidebar}
+                  className="sidebar-icon"
+                />
+              )}
+            </div>
+          )}
+
+          {sidebarOpen && (
+            <ul className="sidebar-menu">
+              <li>
+                <Link to="/">HOME</Link>
+              </li>
+              <li>
+                <Link to="/main-gallery">GALLERY</Link>
+              </li>
+              <li>
+                <Link to="/main-portfolio">PORTFOLIO</Link>
+              </li>
+              <li>
+                <Link to="/main-rates">RATES</Link>
+              </li>
+              <li>
+                <Link to="/main-service">BOOKING</Link>
+              </li>
+              <li>
+                <Link to="/main-about">ABOUT US</Link>
+              </li>
+              <li>
+                {/* Add an exit icon to close the sidebar */}
+                <FontAwesomeIcon
+                  icon={faTimes}
+                  onClick={toggleSidebar}
+                  className="exit-icon-sidebar"
+                />
+              </li>
+            </ul>
+          )}
         </div>
       </div>
     </nav>

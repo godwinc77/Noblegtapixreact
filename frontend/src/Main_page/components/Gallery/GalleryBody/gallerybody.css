@@ -1,9 +1,11 @@
 .gallery-body {
+  width: 100%;
+  height: 2300px;
   margin-top: 20px;
-  border: silver solid;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   align-items: center;
 }
 .gallery-body-text {
@@ -19,7 +21,6 @@
   display: flex;
   top: 0px;
   justify-content: center;
-  border: goldenrod solid;
 }
 .gallery-body-con {
   width: 100%;

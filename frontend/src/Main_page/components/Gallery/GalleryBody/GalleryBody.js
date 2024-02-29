@@ -99,9 +99,16 @@ const GalleryBody = () => {
         </div>
         <div className="gallery-body-bg">
           {Array.from({ length: numberOfRows }, (_, rowIdx) => (
-            <div key={rowIdx} className="gallery-row">
+            <div
+              key={rowIdx}
+              className="gallery-row"
+              style={{
+                flexDirection: "row-reverse", // Reverse the order of images within each row
+              }}
+            >
               {allImage
                 .slice(rowIdx * 5, (rowIdx + 1) * 5)
+                .reverse() // Reverse the order of images within each row
                 .map((imageId, idx) => (
                   <div
                     key={idx}

@@ -1,0 +1,23 @@
+.main-home-gallery-body {
+  width: 100%;
+
+  padding-top: 20px;
+}
+.main-home-gallery-body-bg {
+  width: 100%;
+}
+.main-home-gallery-row {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+}
+.main-home-gallery-img {
+  width: 19%;
+}
+
+.main-home-gallery-img img {
+  max-width: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+}
